@@ -7,7 +7,377 @@
         <meta name="keywords" content="Engaging quizes, Learning, Elementary kids, Tutorials"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <title>nextgenacademy.com</title>
-        <link rel="stylesheet" href="proj4.css">
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+div{
+    margin:0px 0px;
+    padding:0px 0px;
+   
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    backdrop-filter:blur(5px);
+    min-height:100vh;
+    
+}
+.pic{
+    margin:0;
+    padding:0;
+    width:50px;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+div img{
+    position:relative;
+    float:right;
+    padding-right:50px;
+    height:300px;
+    width:500px;
+}
+div h1{
+    color:rgb(12, 66, 63);
+    font-size:60px;
+    font-family: "Playpen Sans", cursive;
+    display:flex;
+    padding-left:100px;
+    padding-top:100px;
+}
+.image{
+    position:relative;
+    height:100;
+    left:0px;
+    width:100px;
+
+}
+
+nav{
+    background-color:white;
+    box-shadow:5px  5px 5px rgba(0,0,0,0.1)
+}
+nav ul{
+    width:100%;
+    list-style:none;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+nav li{
+    height:50px;
+}
+nav a{
+    font-family:cursive;
+    font-weight: bolder;
+    color:rgb(5, 73, 75);
+    height:100%;
+    padding:0px 30px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+}
+.right{
+    float:right;
+}
+nav a:hover{
+    background-color:rgb(232, 255, 196);
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index:999;
+    background-color:rgba(255,255,255,0.0);
+    backdrop-filter:blur(10px);
+    box-shadow:-10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+.sidebar li{
+    width:100%;
+}
+.sidebar a{
+    width:100%;
+}
+@media(max-width:500px){
+    .hideOnMobile{
+        display:none;
+    }
+}
+header {
+    background-image:url(&quot;https://storage.googleapis.com/yogaya_product_website/landing_page/gradient.svg&quot;);
+    color: #104554; 
+    text-align: center; 
+    font-size:40px;
+    
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    
+
+    /*font-family: "Playwrite DE Grund", cursive;*/
+    
+}
+.content{
+    margin:50px 40px;
+    padding:30px 50px;
+    
+    
+} 
+.content h2{
+    font-size:50px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight:400;
+}
+.content p{
+    font-size:30px;
+    font-family: "Quicksand", sans-serif;    
+}
+.button{
+	background-color:#065e59;
+	padding:15px 32px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:20px;
+	text-decoration:none;
+	color:#fff;
+	background-image: linear-gradient(bottom, rgb(30, 170, 49) 0%, rgb(6, 53, 20) 100%);
+	box-shadow: inset 0px 1px 0px #abf17f, 0px 6px 0px #0d6f25;
+	border-radius: 5px;
+}
+
+.button:active {
+	top:7px;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
+	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+	color: #156785;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background: rgb(44,160,202);
+}
+.button::before {
+	background-color:#072239;
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:4px;
+	left:-2px;
+	top:5px;
+	z-index:-1;
+	border-radius: 6px;
+	box-shadow: 0px 1px 0px #fff;
+}
+.button::before {
+	top:-2px;
+}
+.courses{
+    margin:10px 10px;
+    padding:30px 30px;
+}
+.courses h2{
+    font-size:6em;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    color:rgb(6, 92, 95);
+    text-align:center;
+}
+
+.preskl{
+    width:800px;
+    margin:10px 10px;
+    padding:50px 50px;
+    overflow-wrap:normal;
+    animation-name: angelballY;
+    animation: angelballY 3s ease-in 0s infinite reverse;
+}
+.preskl p{
+    font-weight:470;
+    font-size:30px;
+    font-family: "Dosis", sans-serif;
+}
+.preskl h3{
+    font-size:50px;
+    color:#064b5e;
+
+}
+@keyframes angelballY {
+    from {}
+
+    to {
+        transform: translateY(100px);
+    }
+
+}
+.lightbox-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.lightbox-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.lightbox-container::before,
+.lightbox-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-container::before {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+.lightbox-container::after {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.lightbox-container:hover::before {
+    opacity: 1;
+}
+
+.lightbox-container:hover::after {
+    opacity: 1;
+}
+
+.lightbox-container:hover .lightbox-image {
+    transform: scale(1.1);
+}
+.rocket-container {
+    position: relative;
+    height: 100vh; /* Full height */
+}
+
+.rocket {
+    position: absolute;
+    bottom: 0; /* Start at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for the width of the rocket */
+    animation: moveRocket 4s linear infinite; /* Animation properties */
+}
+
+@keyframes moveRocket {
+    0% {
+        bottom: 0; 
+    }
+    100% {
+        bottom: 100%; 
+        transform: translateX(-50%) translateY(-100%); 
+    }
+}
+/*.reviews{
+    margin:10px 10px;
+    padding:10px 10px;
+    display:flex;
+}*/
+footer {
+    position:relative;
+    top:3500px;
+    bottom:500px;
+    background-color: #46a5a5;
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+.footerContainer{
+    width:100%;
+    height:200px;
+    padding:70px 30px 20px;
+}
+
+.footerNav {
+    margin:10px 60px;
+}
+.footerNav ul{
+    display:flex;
+    justify-content:space-between;
+    gap:100px;
+    list-style-type:none;
+}
+.footerNav ul li a{
+    color:white;
+    margin:20px;
+    text-decoration: none;
+    font-size:2em;
+    opacity:0.7;
+    transition:0.5s;
+}
+.footerNav ul li a:hover{
+    opacity:1;
+}
+.footerBottom{
+    background-color:#000000;
+    padding:20px;
+    text-align:center;
+}
+.footerBottom p{
+    color:white;
+}
+
+/*.foo{
+    position:relative;
+    top:3500px;
+    bottom:500px;
+
+}*/
+@media(max-width:700px){
+    .footerNav ul{
+        flex-direction:column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align:center;
+        margin:10px;
+    }
+}
+.bottom{
+    font-size:1.5em;
+     background-color: #2b4544; 
+    color: #fff; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+@media (max-width: 600px) {
+    .favicons img {
+      width: 24px;  /* Smaller size on mobile */
+    }
+  }
+  
+
+
+    
+
+        </style>
     </head>
     <body>  
         <nav>
